@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Burger- Customize Your Burger</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <div>
+      <button id="menu-toggle" class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+      <ul>
+        <li><a href="#home">Home</a> </li>
+        <li><a href="#menu">Menu</a> </li>
+        <li><a href="#contactus">Contact</a> </li>
+        <li> <a href="#cart"><span id="cartIcon" class="fa fa-shopping-cart" aria-hidden="true"><span id="cartCount" class=" ">0</span></span></a></li>
+      </ul>
+    </div>
+    <h1> Welcome to Burger</h1>
+    <div class="headerImg">
+      <img src="https://images.unsplash.com/photo-1530554764233-e79e16c91d08?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwyfHxidXJnZXJzJTJDJTIwYnVyZ2VyfGVufDB8fHx8MTY5MjU4NTUzN3ww&ixlib=rb-4.0.3&auto=format&fit=clip&w=1920&q=100" alt="">
+      <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxidXJnZXJzJTJDJTIwYnVyZ2VyfGVufDB8fHx8MTY5MjU4NTUzN3ww&ixlib=rb-4.0.3&auto=format&fit=clip&w=1920&q=100" alt="" style="height: 500px;width: 500px;">
+      <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwzfHxidXJnZXJzJTJDJTIwYnVyZ2VyfGVufDB8fHx8MTY5MjU4NTUzN3ww&ixlib=rb-4.0.3&auto=format&fit=clip&w=1920&q=100" alt="">
+    </div>
+  </header>
+  <main>
+    <div class="poster" id="menu">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1604907178402-1e7f5ea89006?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxidXJnZXJzJTJDJTIwY3VzdG9tJTIwYnVyZ2VyfGVufDB8fHx8MTY5MjU4NTUzN3ww&ixlib=rb-4.0.3&auto=format&fit=crop&w=392&h=392&q=100" alt="">
+        <div class="title">
+          <h2><a href="#cart">Custom Burger</a></h2>
+          <span class="price"> starts from </span>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1525164286253-04e68b9d94c6?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxidXJnZXJzJTJDJTIwYmJxJTIwc2F1Y2V8ZW58MHx8fHwxNjkyNTg1NTM3fDA&ixlib=rb-4.0.3&auto=format&fit=crop&w=392&h=392&q=100" alt="">
+        <div class="title">
+          <h2>BBQ Bacon Burger</h2>
+          <span class="price">&#8377; 189</span>
+        </div>
+        <button class="add-to-cart-button" data-name="BBQ Bacon Burger" data-price="189">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1554998171-7e599bc95ccd?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxidXJnZXJzJTJDJTIwY2xhc3NpYyUyMGJ1cmdlcnxlbnwwfHx8fDE2OTI1ODU1Mzd8MA&ixlib=rb-4.0.3&auto=format&fit=crop&w=392&h=392&q=100" alt="">
+        <div class="title">
+          <h2>Classic Burger</h2>
+          <span class="price">&#8377; 149</span>
+        </div>
+        <button class="add-to-cart-button" data-name="Classic Burger" data-price="149">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1599155253646-7989e08c05c1?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxidXJnZXJzJTJDJTIwZG91YmxlJTIwY2hlZXNlYnVyZ2VyfGVufDB8fHx8MTY5MjU4NTUzN3ww&ixlib=rb-4.0.3&auto=format&fit=crop&w=392&h=392&q=100" alt="">
+        <div class="title">
+          <h2>Double Cheeseburger</h2>
+          <span class="price">&#8377; 199</span>
+        </div>
+        <button class="add-to-cart-button" data-name="Double Cheeseburger" data-price="199">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1575480410556-7a79a270ff1b?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxidXJnZXJzJTJDJTIwc3BpY3l8ZW58MHx8fHwxNjkyNTg1NTM3fDA&ixlib=rb-4.0.3&auto=format&fit=crop&w=392&h=392&q=100" alt="">
+        <div class="title">
+          <h2>Spicy Chicken Burger</h2>
+          <span class="price">&#8377; 249</span>
+        </div>
+        <button class="add-to-cart-button" data-name="Spicy Chicken Burger" data-price="249">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxidXJnZXJzJTJDJTIwdmVnZ2llJTIwYnVyZ2VyfGVufDB8fHx8MTY5MjU4NTUzN3ww&ixlib=rb-4.0.3&auto=format&fit=crop&w=392&h=392&q=100" alt="">
+        <div class="title">
+          <h2>Veggie Burger</h2>
+          <span class="price">&#8377; 179</span>
+        </div>
+        <button class="add-to-cart-button" data-name="Veggie Burger" data-price="179">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+  <div class="modal">
+    <button class="close-button">X</button>
+    <h1>Alert</h1>
+    <div class="modalAlert">
+<h2></h2>
+    </div>
+  </div>
+  <div id="cart">
+    <section id="burger-section">
+      <h2>Customize Your Burger</h2>
+      <div id="ingredient-list"></div>
+      <button id="create-burger"  style="width: 300px;background-color: rgb(25, 65, 25); margin: auto;">Create Burger</button>
+    </section>
+    <section id="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p>Total: <span id="cart-total">&#8377; 0.00</span></p>
+        <button id="clear-cart">Clear Cart</button>
+      </section>
+  </div>
+<section class="customer-reviews">
+  <h2>Customer Reviews</h2>
+  <div class="reviews">
+    <div class="prev">
+      <i class="fa fa-chevron-left prev" aria-hidden="true"></i>
+    </div>
+    <div class="review-card">
+      <i class="fa-solid fa-user"></i>
+      <div class="review-content">
+        <h3>John Doe</h3>
+        <p> "Brrrgrrr is my go-to place for creating the perfect burger! The customization options are fantastic, and the ingredients are always fresh. I love how easy it is to add items to my cart and see the total price before ordering. Plus, their delivery service is super fast!"</p>
+        <span class="review-date">Posted on 08-08-2023</span>
+      </div>
+    </div>
+    <div class="review-card card1">
+      <i class="fa-solid fa-user"></i>
+      <div class="review-content">
+        <h3>David</h3>
+        <p> "The variety of ingredients they offer is impressive. I enjoyed customizing my burger, and the 'Create Burger' feature is fun to use. The only reason I didn't give it 5 stars is that I wish they had more vegetarian options. Still, the Veggie Burger I had was delicious."</p>
+        <span class="review-date">Posted on 15-07-2023</span>
+      </div>
+    </div>
+    <div class="review-card card1">
+      <i class="fa-solid fa-user"></i>
+      <div class="review-content">
+        <h3>Akbar khan</h3>
+        <p> "Brrrgrrr is a burger lover's paradise. The BBQ Bacon Burger is a must-try, and their customization option allows you to build your dream burger. The cart feature makes it convenient to keep track of your order. Overall, a great experience, and I'll definitely be back!"</p>
+        <span class="review-date">Posted on 12-03-2023</span>
+      </div>
+    </div>
+    <div class="review-card card1">
+      <i class="fa-solid fa-user"></i>
+      <div class="review-content">
+        <h3>A Julie</h3>
+        <p>"I had a great experience with Brrrgrrr. The Classic Burger is my all-time favorite, and the cart made it easy to see my order before checkout. I appreciate the effort they put into the website design. My only suggestion is to add more dessert options!"</p>
+        <span class="review-date">Posted on 14-05-2023</span>
+      </div>
+    </div>
+    <div class="next">
+      <i class="fa fa-chevron-right next" aria-hidden="true"></i>
+    </div>
+  </div>
+</section>
+  <div id="contactus">
+    <h1>Contact Us</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+  </div>
+  <footer>
+    <div class="back-to-top" id="back-to-top" onclick="scrollToTop()">Back to Top</div>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Burger</h2>
+            </div>
+            <div class="footer-info">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><strong>Address:</strong> Secunderabad,Hyderabad,India</p>
+                    <p><strong>Email:</strong> brrgrrinfo@gmail.com</p>
+                    <p><strong>Phone:</strong> +91 7754367976</p>
+                </div>
+                <div class="social-links">
+                    <h3>Connect with Us</h3>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Burger. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+  <script src="./js/script.js"></script>
+</body>
+</html>
